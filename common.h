@@ -8,27 +8,17 @@
 #ifndef COMMON_H
 #define	COMMON_H
 
-#define ZFREE(x)			\
+#define BFREE(x)                                \
 if (x) {					\
 	free(x);				\
 	x = NULL;				\
 }
 
-#define ZDELETE(x)			\
-if (x) {					\
-	delete(x);				\
-	x = NULL;				\
-}
-
-#define LOG(exp)			\
+#define LOG(exp)                                \
 printf("%s:%d	%s\n", __FILE__, __LINE__, exp);
 
-#define ZCHECKNULL(x)		\
-if (!x) {					\
-	LOG("is null");			\
-}
 
-#define ZASSERT(x)		\
+#define ZASSERT(x)                              \
 if (!x) {					\
 	log_error("is null");			\
 }
