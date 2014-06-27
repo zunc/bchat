@@ -1,6 +1,6 @@
 # bchat
 
-Simple way to chating with your friend
+Simple way to chatting with your friend
 
 ## When I should know about it ?
 * You working on a PC without GUI, without facebook ... and do you want talk with your friends ?
