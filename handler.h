@@ -130,7 +130,7 @@ int broadcast_message_room(connection *conn_from, uint8_t *data, uint32_t len) {
             // broadcast without me
             utstring_clear(response);
             if (conn_from != it_room)
-                utstring_printf(response, "%s : %s", conn_from->user, data);
+                utstring_printf(response, "%s: %s", conn_from->user, data);
             add_last_char(response);
             conn_write(it_room, utstring_body(response), utstring_len(response));
         }
